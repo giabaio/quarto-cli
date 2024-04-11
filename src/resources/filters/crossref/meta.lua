@@ -34,11 +34,11 @@ function crossrefMetaInject()
             usePackage("float") .. "\n" ..
             "\\floatstyle{ruled}\n" ..
             "\\@ifundefined{c@chapter}{\\newfloat{codelisting}{H}{lop}}{\\newfloat{codelisting}{H}{lop}[chapter]}\n" ..
-            "\\floatname{codelisting}{" .. as_latex(title("lst", "Listing")) .. "}\n"
+            "\\floatname{codelisting}{" .. as_latex(title("lst", "Box")) .. "}\n"
           )
 
           inject(
-            "\\newcommand*\\listoflistings{\\listof{codelisting}{" .. listOfTitle("lol", "List of Listings") .. "}}\n"
+            "\\newcommand*\\listoflistings{\\listof{codelisting}{" .. listOfTitle("lol", "List of Boxes") .. "}}\n"
           )
         end
 
