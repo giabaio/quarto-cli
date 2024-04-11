@@ -50,8 +50,8 @@ crossref = {
       {
         caption_location = "top",
         kind = "float",
-        name = "Listing",
-        prefix = "Listing",
+        name = "Box",
+        prefix = "Box",
         latex_env = "codelisting",
         ref_type = "lst",
       },
